@@ -82,6 +82,10 @@
         <input type="email" placeholder="Email" name="email" required />
         <input type="text" placeholder="Industry" name="industry" required />
         <textarea placeholder="Comment" name="comment" rows="4" required></textarea>
+        <!-- Hidden fields to disable captcha and redirect -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://www.ej-globalconsulting.com/submitted.html">
+
         <button type="submit">Submit</button>
       </form>
     </div>
