@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EJ Global</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+
+<div class="navbar">
+  <div class="logo">
+    <a href="#top">
+      <img src="Logo.png" alt="EJ Global Logo" class="logo-img" />
+    </a>
+  </div>
+
+  <!-- Hamburger icon -->
+
+<div class="dropdown">
+    <button onclick="toggleDropdown()" class="dropbtn" aria-label="Toggle menu">
+      <svg class="ham hamRotate ham" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+  <path
+        class="line top"
+        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+  <path
+        class="line middle"
+        d="m 30,50 h 40" />
+  <path
+        class="line bottom"
+        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+</svg>
+    </button>
+
+    <div class="sidebar" id="sidebar">
+  <a href="#about">About Us</a>
+  <a href="#services">Our Services</a>
+  <a href="#clients">Our Clients</a>
+  <a href="#contact">Contact Us</a>
+  <a href="/booking.html">Discovery Call</a>
+</div>
+  </div>
+</div>
+
+  <div class="slideshow-container">
+    <div class="image-wrapper">
+      <img id="slideshow-image" src="BEN_pose.jpeg" alt="Service Image" />
+    </div>
+    <div class="caption-controls">
+      <button id="prevBtn" class="nav-arrow" aria-label="Previous Image">&#10094;</button>
+      <div class="caption-overlay" id="slideshow-caption">Education Consulting</div>
+      <button id="nextBtn" class="nav-arrow" aria-label="Next Image">&#10095;</button>
+    </div>
+  </div>
+
+  <div id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      Why choose us as a consulting company? Emily Johnson has extensive experience consulting across multiple sectors including researchers at the NIH and more.
+    </p>
+  </div>
+
+  <div id="services" class="section">
+    <h2>Our Services</h2>
+    <p>Here you can add a detailed list or description of your services.</p>
+  </div>
+
+  <div id="clients" class="section">
+    <h2>Our Clients</h2>
+    <p>Details about your clients or testimonials can go here.</p>
+  </div>
+
+  <div id="contact" class="section contact-social">
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <p>Interested in what our company can do for you but not sure where to start? Submit a request using the form below and we will get back to you as soon as possible.</p>
+      <form>
+        <input type="text" placeholder="First and Last Name" name="name" required />
+        <input type="email" placeholder="Email" name="email" required />
+        <input type="text" placeholder="Industry" name="industry" required />
+        <textarea placeholder="Comment" name="comment" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="social-media">
+      <h3>Follow Us</h3>
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><img src="FB.jpeg" alt="Facebook" /></a>
+      <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><img src="Insta.jpeg" alt="Instagram" /></a>
+      <a href="https://www.linkedin.com/feed/" target="_blank" aria-label="LinkedIn"><img src="LinkedIn.png" alt="LinkedIn" /></a>
+    </div>
+  </div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
