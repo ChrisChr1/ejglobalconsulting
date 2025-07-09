@@ -94,6 +94,15 @@
 
   <button type="submit">Submit</button>
 </form>
+      <script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    const email = document.getElementById('email').value.trim().toLowerCase();
+    if(email === 'hugolehmann92@outlook.com') {
+      alert('This email address is blocked from submitting the form.');
+      e.preventDefault(); // stop form submission
+    }
+  });
+</script>
 
       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </div>
