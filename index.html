@@ -105,7 +105,16 @@
   });
 </script>
 
-
+<script>
+(function() {
+  var cleantalkScript = document.createElement('script');
+  cleantalkScript.type = 'text/javascript';
+  cleantalkScript.async = true;
+  cleantalkScript.src = 'https://moderate.cleantalk.org/api2.0/checkjs?ak=ary9ugadubamy4e&url=' + encodeURIComponent(window.location.href);
+  document.head.appendChild(cleantalkScript);
+})();
+</script>
+      
       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </div>
     <div class="social-media">
