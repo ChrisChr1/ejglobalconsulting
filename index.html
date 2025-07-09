@@ -80,11 +80,21 @@
   <input type="text" name="industry" placeholder="Industry" required />
   <textarea name="comment" rows="4" placeholder="Comment" required></textarea>
 
-  <!-- Required hidden inputs -->
+  <!-- Honeypot field (optional but recommended) -->
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+  <!-- Blacklist specific spammer emails -->
+  <input type="hidden" name="_blacklist" value="hugolehmann92@outlook.com" />
+
+  <!-- Enable Formsubmit's CAPTCHA -->
+  <input type="hidden" name="_captcha" value="true" />
+
+  <!-- Redirect after submit -->
   <input type="hidden" name="_next" value="https://www.ej-globalconsulting.com/submitted.html">
 
   <button type="submit">Submit</button>
 </form>
+
       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </div>
     <div class="social-media">
